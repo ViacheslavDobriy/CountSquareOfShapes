@@ -10,7 +10,6 @@ public class DataBaseOfFigures<T> implements Iterable<T>{
     int index = 0;
 
     public DataBaseOfFigures() {
-        index++;
     }
 
     public Object[] getFigures(){
@@ -41,8 +40,7 @@ public class DataBaseOfFigures<T> implements Iterable<T>{
 
             @Override
             public T next() {
-                count++;
-                return (T) figures[count];
+                return (T) figures[count++];
             }
         };
     }

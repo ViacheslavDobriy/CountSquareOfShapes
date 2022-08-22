@@ -15,8 +15,10 @@ public class App {
         Figure figure2 = new Rectangle("rectangle", 3,6);
         allFigures.addLast(figure1);
         allFigures.addLast(figure2);
+
         for (Figure figure: allFigures) {
-            System.out.println(figure.figureName);
+            figure.square();
+            System.out.println(figure.square);
         }
     }
 }
